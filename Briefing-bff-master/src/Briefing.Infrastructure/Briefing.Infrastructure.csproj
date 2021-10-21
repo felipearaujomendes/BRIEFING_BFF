@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210304023018_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304023018_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304024027_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304024027_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304024733_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304024733_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304031212_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304031212_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304033058_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304033058_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304033628_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304033628_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210304034551_initial.cs" />
+    <Compile Remove="Data\Migrations\20210304034551_initial.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210305181449_ajusteResposta.cs" />
+    <Compile Remove="Data\Migrations\20210305181449_ajusteResposta.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Briefing.Application\Briefing.Application.csproj" />
+    <ProjectReference Include="..\Briefing.Domain\Briefing.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
